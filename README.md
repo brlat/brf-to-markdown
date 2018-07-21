@@ -1,4 +1,22 @@
-﻿# Bookshareの.brf点字ファイル(ASCII点字)を、ユニコード点字のmarkdownテキストファイルに変換するperlスクリプト
+﻿# Converts Bookshare's .brf braille file to Unicode braille with markdown markup - Bookshareの.brf点字ファイル(ASCII点字)を、ユニコード点字のmarkdownテキストファイルに変換するperlスクリプト
+
+## in English
+
+### What is this?
+
+This perl scripts converts Bookshare's braille file(.brf) to Unicode braille(like ⠠⠃⠕⠕⠅⠎⠓⠁⠗⠑), which can be displayed with refreshable braille display using screen readers like NVDA or iOS/Mac VoiceOver. 
+
+It also adds markdown's heading(#) and list(*) mark to the Unicode braille text file so that you can navigate through the braille file as html file using screen reader's navigate commands.
+
+### Usage
+
+Type following in Windows' command prompt:
+
+> brf2md.exe some_book.brf
+
+This outputs some-book.brf.md.
+
+You can read this Unicode braille markdown file with markdown preview apps like "Byword" or "Editorial Pro".
 
 ## 何をするものか
 
