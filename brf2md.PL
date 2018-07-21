@@ -1,8 +1,8 @@
-﻿use Convert::Braille;
+use Convert::Braille;
 use utf8;
 
 $in = $ARGV[0];
-die "No input file name.\n" unless $in;
+die "usage1: perl brf2md.pl input.brf\nusage2: brf2md.exe input.brf\n" unless $in;
 
 $out = $in . ".md";
 
